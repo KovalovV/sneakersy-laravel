@@ -598,14 +598,43 @@ a {
 }
 
 .profile-card {
+    position: relative;
     text-align: center;
     padding: 20px;
 }
 
+.profile-card--border {
+    border: 1px solid #ff7373;
+}
+
 .profile-img img {
-    width: 84px;
-    height: 84px;
+    width: 64px;
+    height: 64px;
     margin: 0 auto;
+}
+
+.profile-card-date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.all-feedbacks {
+    margin-top: 64px;
+}
+
+.feedbacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 32px;
+
+    margin-top: 32px;
+}
+
+@media(max-width: 800px) {
+    .feedbacks {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .testimonials-cards {
@@ -641,6 +670,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
+    padding-left: 0;
 }
 
 .star-list-item {
@@ -658,6 +688,11 @@ a {
     margin-bottom: 0px;
     line-height: 29px;
     text-align: center;
+}
+
+.feedback-button {
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .author {

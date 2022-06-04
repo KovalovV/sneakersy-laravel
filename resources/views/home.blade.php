@@ -238,6 +238,9 @@
               </div>
             </div>
           </div>
+          <div class='feedback-button'>
+            <a href="{{ url('/feedback') }}" class="default-button">Залишити відгук</a>
+          </div>
         </div>
     </section>
     <section class="container container-products">
