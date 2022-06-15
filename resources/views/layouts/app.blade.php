@@ -111,7 +111,7 @@
                 <div class="footer-logo">
                     <a href="#" class="logo-container">
                         <div class="logo-icon-container logo-icon-container-big">
-                          <img class="logo-icon" src="img/logo.png" alt="Logo" />
+                          <img class="logo-icon" src="/img/logo.png" alt="Logo" />
                         </div>
                         <div>
                           <h1 class="logo-title logo-title-big">Sneakersy</h1>

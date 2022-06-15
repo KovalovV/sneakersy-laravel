@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Product;
+use App\Models\Feedback;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $feedback = new Feedback();
+        $product = new Product();
+
+        $most_popular = $product::orderBy('shoppings', 'DESC')->get();
+        return view('home', ['feedbacks' => $feedback->all(), 'products' => $product->all(), 'most_popular' => $most_popular]);
     }
 }
